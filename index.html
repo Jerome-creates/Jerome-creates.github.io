@@ -1,127 +1,634 @@
-
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>... Tarsius Force | Web Design & Web Development ...</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-</head>
-<body>
+    <title>Jerome-creates - Web development</title>
 
-<div id="header">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- above line links to boostrap -->
 
-    <div class="center">
+    <link href='https://fonts.googleapis.com/css?family=Play|Pacifico' rel='stylesheet' type='text/css'>
+    <!-- above line links this page to google fonts -->
 
-        <div id="logo">
-            <img src="logo_03.JPG " align="tarsius force logo">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- above line links to customized css stylesheet -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+    
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> 
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="projectName navbar-brand">
+              <a href="#">Xavier Sallanon</a>
+          </div>  <!-- end projectName -->
+        </div> <!--end navbar-header -->
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
         </div>
+      </div> <!-- end nav container --> 
+    </nav> <!-- end navbar --> 
+      
 
-        <div class="navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+    <!-- image carousel starts here -->
+    <div class="container-fluid" id="home">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/mountain.jpg" alt="Mountain">
+          <div class="carousel-caption">
+            I can help you to reach your Wishes !
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/phare_resized.jpg" alt="Phare">
+          <div class="carousel-caption">
+            Clear vision !
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/sea_resized.jpg" alt="Sea">
+          <div class="carousel-caption">
+            Neat and beautiful outcome !
+          </div>
+        </div>
+      </div><!-- end carousel-inner -->
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- end container fluid -->  
+
+    <!-- intro section starts here -->
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4 col-xs-6">
+          <h2>Portfolio Concept</h2>
+          <p>I'm new to this all but i think i can really enjoy it and it is so fun ^^<br><br>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /col -->
+        <div class="col-md-4 col-xs-6">
+          <h2>Project Goals</h2>
+          <p>Although I cannot dedicate 12 hours to learning code every day since I am a <strong> student </strong> currently going threw exams, but I am highly motivated to study <strong>3 days a week</strong> as well as <strong>few hours during week-ends</strong> for the <strong>next 6 months</strong>. I am also planning to engage at least <strong>once a month</strong> with the <strong>startup community</strong>.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /col -->
+        <div class="col-md-4 col-xs-6">
+          <h2>Course Goals</h2>
+          <p>I have an <strong>engineering background</strong> with a half year experience in the informatics. <<br><br>
+
+          I've always been attracted to <strong>HighTech</strong> and think this environment has less entry barriers and allows for more <strong>remote jobs</strong> so it will allow me landing an <strong>exciting job</strong> that I could do from anywhere !<br><br>
+
+          I would like to start working on Web development projects remotely as a <strong>Freelancer</strong> in <strong>January 2017</strong>, so that I will be able to <strong>work from anywhere</strong>.<br><br>
+
+          In addition I would like to develop <strong>personal projects</strong> and participate to <strong>entrepreneurial ventures</strong> that could make use of my new web development skills and competencies as well as of my <strong>previous experiences and competencies</strong> in particular in <strong>sales, marketing and strategy</strong> !<br>
+          </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /col -->
+      </div><!-- /row -->
+    </div> <!-- end container intro section -->
+
+
+    <!-- about section starts here -->
+    <div class="container anchor" id="about">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header">
+            <h1>About Xavier</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-xs-12">
+          <div class="image_about">
+            <img src="img/about_XS_resized.jpg" alt="me" class="img-responsive">
+          </div><!-- end image -->
+        </div>
+        
+        <div class="col-md-6 col-md-12">
+          <div class="intro">
+            <h2>Thanks for visiting this page!</h2>
+            <br><p><em>Let me support and increase your project's impact through web development!</em></p>
+          </div><!-- end intro -->
+        </div>
+        
+        <div class="col-md-3 col-md-12">
+          <div class="skills">
+            <h3>My Skills:</h3>
+            <ul id="skills-list">
+              <p><em>Web development:</em></p>
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>Boostrap</li><br>
+              <p><em>Other:</em></p>
+              <li>Marketing plan</li>
+              <li>Strategic plan</li>
+              <li>...</li>
             </ul>
+          </div><!-- end skills !-->
         </div>
+      </div><!-- end row -->
+      
+      <div class="row">
+        <div class=" col-md-12">
+        <div class="main-text">
+          <h3>More about me</h3>
+          <p>I am a german student with a half year informatics experience. Although I have already developped few website as a hobby, I would like to do it more seriously now and be part of a more agile environment.<br><br>
 
-        <!-- dont remove this -->
-        <div class="clear"></div>
-    </div>
-</div>
+          I will be happy to help you build your digital projects! I am confident that my strong determination, committment and happinest will be valuable to your success.<br><br>
 
-<!-- this for banner -->
-<div id="banner">
+          When not working or learning code I enjoy to travel and discover new countries and cultures. I am also found of sports in particular running, trekking and sailing.</p>
+        </div><!-- end main-text -->
+      </div>
+      </div>
+    </div> <!-- end container about section -->
 
-    <div class="center">
+    <!-- work section starts here -->
+    <div class="container anchor" id="work">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header">
+            <h1>My work</h1>
+          </div>
+        </div>
+      </div>
 
-        <h1>Welcome to tarsius website</h1>
-        <h2>Do you like to build some projects with us?</h2>
-        <a href="#" class="btn-primary">Learn More</a>
+      <div class=”row”>
+        <div class="col-xs-12 col-sm-6 col-md-3"><img src="img/wk_machine1_resized.jpg" class="img-responsive"></div>
+        <div class="col-xs-12 col-sm-6 col-md-3"><img src="img/wk_machine2_resized.jpg" class="img-responsive"></div>
+        <div class="col-xs-12 col-sm-6 col-md-3"><img src="img/wk_machine3_resized.jpg" class="img-responsive"></div>
+        <div class="col-xs-12 col-sm-6 col-md-3"><img src="img/wk_machine4_resized.jpg" class="img-responsive"></div>
+      </div>
+      <div class=”row”>
+        <div class="col-xs-12 col-sm-6 col-md-3"><img src="img/wk_machine4_resized.jpg" class="img-responsive"></div>
+        <div class="col-xs-12 col-sm-6 col-md-3"><img src="img/wk_machine3_resized.jpg" class="img-responsive"></div>
+        <div class="col-xs-12 col-sm-6 col-md-3"><img src="img/wk_machine2_resized.jpg" class="img-responsive"></div>
+        <div class="col-xs-12 col-sm-6 col-md-3"><img src="img/wk_machine1_resized.jpg" class="img-responsive"></div>
+      </div>
+    </div><!-- end container work section -->  
 
-    </div>
 
-</div>
+    <!-- contact section starts here -->
+    <div class="container-fluid anchor" id="contact">
+      <div class="header">
+        <h1>To contact me</h1>
+      </div>
 
-<!-- this for our services -->
+      <div class="row">
 
-<div id="our-services">
+        <div class="col-lg-4 col-md-4 column-left">
+          <div class="column">
+              <h3>You can call me</h3>
+              <p><span class="glyphicon glyphicon-phone"></span> : +33.6.00.00.00.00</p>
+              <h3>or, send me an email</h3>
+              <p><span class="glyphicon glyphicon-envelope"></span> : xav.sln@gmail.com</p>
+          </div><!-- end column -->
+        </div>
+        <div class="col-lg-8 col-md-8">
+          <div class="column">
+            <form>
+            <div class="form-group">
+              <div class="form-contact">
+                <h3>Send an email, or use the form below</h3>
+                <div class="row">
+                  <div class="col-lg-6">
+                  <label for="name">Your name*</label>
+                  <input type=”text” id="name" required=""required" class="form-control" placeholder="Enter name">
+                  </div>
 
-    <div class="center">
-
-        <h1 class="title-content">Our<span>Services</span></h1>
-
-        <div class="content">
-
-            <div class="content-list">
-
-                <div class="list-services">
-                    <h2>Web Design</h2>
-                    <div class="text">
-                        Tarsius Force menerima jasa pembuatan design website, <br>
-                        untuk kualitas dijamin pasti bagus. <br>
-                        untuk harga mengikuti.
-                    </div>
-                    <div class="button">
-                        <a href="#">Learn More</a>
-                    </div>
+                  <div class="col-lg-6">
+                  <label for="phone">Your phone number</label>
+                  <input type="text" id="phone" class="input-medium bfh-phone form-control" data-country="US" placeholder="Enter phone number">
+                  </div>
                 </div>
 
-                <div class="list-services last">
-                    <h2>Web Programming</h2>
-                    <div class="text">
-                        Tarsius Force menerima jasa pembuatan design website, <br>
-                        untuk kualitas dijamin pasti bagus. <br>
-                        untuk harga mengikuti.
-                    </div>
-                    <div class="button">
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="clear"></div>
-
+                <label for="email">Your email address*</label>
+                <input type="email" id="email" required="required" class="form-control" placeholder="Enter email">
+                                
+                <label for="message">Your message*</label>
+                <textarea  minlength=25 placeholder="Enter message" style="resize:none"  id="message" message-box" class="form-control"></textarea>
+                <button type="submit" class="btn btn-default submit-btn">Submit</button>
+              </div>
             </div>
+          </form>
 
-            <div class="clear"></div>
+          </div><!-- end column -->
         </div>
 
-        <div class="clear"></div>
-    </div>
+      </div>
+    
+    </div> <!-- end container contact section -->
+    
 
-</div>
+    <!-- faq section starts here -->
+    <div class="container anchor" id="faq">
+      <div class="header">
+        <h1>FAQ</h1>
+      </div>
 
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      
+        <div class="panel panel-default">
 
-<!-- this for notification subscribe -->
-<div id="notification-subscribe">
-    <div class="center">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-chevron-right"></span>
+                Why did you decide to become a informatic fanatic?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              I decided to become a informatic fanatic in order to be able to provide great professional games from anywhere. 
+              In addition I am found of the high tech domain and the opportunities this fast moving environment provides. 
+            </div>
+          </div>
+        </div><!-- end first question/answer block -->
 
-        <div class="left-content">
-            <h2>Notification</h2>
-            <h3>Get notification on your email about tarsius force</h3>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-chevron-right"></span>
+                What is your design process?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              The process I am using contains 4 Gates.
+              The Gate 0 is the launch gate where we define the objectives of your project in particular the goal you want to achieve, the schedule of your project and the technical constraints or else of your project (programming languages, tools etc...) as well as the range of services required. The result of the Gate 0 is a formal contrat.
+              Next will be Gate 1 where the first mock-up will be introduced in order to discuss in more detail the design as well as the site map. The output of Gate 1 is the validated design and site map. This Gate triggers the detailled programming works that shall be presented during Gate 2 which is the project validation before public viewing.
+              After project launch a post-launch review - Gate 3 - is organized in order to integrate potential updates and improvements. Gate 3 will be considered passed once the agreed updates and improvements are applied to the project. 
+            </div>
+          </div>
+        </div><!-- end second question/answer block -->
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-chevron-right"></span>
+                Who are your clients?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              My earlier projects - days ago - were for myself. Another project I did was for my engineering school association I co-founded when I was studying there.
+              I am also currently involved in the development of a web site for a shop as well as for a travel agency.
+            </div>
+          </div>
+        </div><!-- end third question/answer block -->
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="glyphicon glyphicon-chevron-right"></span>
+                In addition to web development services, can you provide further business services to your clients?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+              Should you need further business services such as marketing plan, strategic plan... in addition to web development services, I will be happy to provide you with these services.
+            </div>
+          </div>
+        </div><!-- end fourth question/answer block -->
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFive">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="glyphicon glyphicon-chevron-right"></span>
+                What are the languages you speak, read and use for your web projects?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="panel-body">
+              Communication languages I can use for projects are French (I am French), English (studied in the UK and did export sales for more than 15 years) and Spanish. My skills in other languages that I have also learnt (Japanese and Korean) are unfortunately too limited today to allow me use them for projects.
+            </div>
+          </div>
+        </div><!-- end fifth question/answer block -->
+      </div>
+      <br><br>
+    </div> <!-- end container faq section -->
+
+    <div class="row">
+      <div class="video col-md-8 col-md-offset-2">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/xvW35v0_iEw" frameborder="0" allowfullscreen></iframe>
         </div>
+      </div>
+    </div>
 
-        <div class="right-content">
-            <a href="#" class="large-btn">Subscribe</a>
+    
+    <footer>
+      <row class="bottom-line">
+        <div class="col-md-6">&copy Xavier Sallanon, 2016</div>
+        <div class="col-md-3"><a href="https://twitter.com/xavsln" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @xavsln</a>
         </div>
-
-        <div class="clear"></div>
-
-    </div>
-</div>
-
-<!-- this for footer -->
-<div id="footer">
-
-    <div class="center">
-
-        Copyright &copy; 2015. Tarsius Force Corp.
-
-    </div>
-
-</div>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+        </row>
+    </footer>
+    
 
 
-</body>
+    <!-- ============================= -->
+    <!-- All JavaScript comes now -->
+    <!-- ============================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Place script tags with JavaScript files here -->
+    <script type="text/javascript">
+    var $root = $('html, body');
+      $('.navbar-nav a').click(function() {
+          var href = $.attr(this, 'href');
+          $root.animate({
+              scrollTop: $(href).offset().top
+          }, 500, function () {
+              window.location.hash = href;
+          });
+          return false;
+      });
+    </script>
+    <!-- for twitter button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <div id="fb-root"></div>
+    <!-- for facebook buttons -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  </body>
 </html>
+styles.css
+/* * { border: 1px solid red; }*/
+
+* { box-sizing: border-box; }
+
+header {
+	margin-top: 0px;
+}
+
+body {
+	position: relative;
+	background-image: url(../img/escheresque.jpg);
+	color: #23282D;
+	font-family: 'Play', Futura, Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+}
+
+.anchor {
+	padding-top: 60px
+}
+
+.projectName {
+  text-transform: uppercase;
+}
+
+.projectName a {
+  font-family: 'Play', Futura, Helvetica, Arial, sans-serif;
+  color: grey;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.container {
+	width: 95%;
+	margin-top: 0px;
+}
+
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.carousel-caption {
+	font-family: 'Play', Futura, Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: 100;
+	color: white;
+}
+
+#work img {
+	padding: 10px;
+	max-height: 200px;
+	margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+
+/**********************/
+/**** About section ****/
+/**********************/
+
+.image_about img {
+	border-radius: 10px;
+}
+
+.skills {
+	border-radius: 10px;
+	max-width: 250px;
+	border: 1px solid grey;
+	background-color: #fbfef9;
+	padding: 0px 10px;
+}
+
+
+/**********************/
+/**** Contact section ****/
+/**********************/
+
+.header {
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+
+.column img {
+	border-radius: 10px;
+}
+
+.column p {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.column-left {
+	vertical-align: middle;
+}
+
+.panel .panel-heading {
+	background-color: #929195;
+	}
+
+.panel-title {
+	color: #fff;
+	}
+
+.panel-body {
+	background-image: url(../img/escheresque.jpg);
+	}
+
+
+#contact {
+  background-image: url("../img/iphone_contact.jpg");
+/*Add a background image*/
+  background-attachment: fixed;
+  background-position: center;
+/*Give the background a fixed position does it not scroll when you scroll*/
+  background-size: cover;
+/*Have the background cover the entire div section*/
+  color: white;
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+  padding:0px;
+  padding-top: 60px;
+  height: auto;
+  margin-top: 100px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 0px;
+}
+
+#contact h1, h2, h3, p {
+	text-align: center;
+}
+
+/*Typography*/
+
+h1,
+h2,
+h3 {
+	font-family: 'Play', Futura, Helvetica, Arial, sans-serif;
+}
+
+.intro p {
+	font-family: 'Pacifico', Futura, Helvetica, Arial, sans-serif;
+	font-size: 2.5em;
+	font-weight: 400;
+	color: #08d4ff;
+	-webkit-margin-before: 0;
+	text-align: center;
+}
+
+.intro h2 {
+	text-align: center;
+	font-weight: 900;
+}
+
+.skills h3 {
+	text-align: left;
+	font-weight: 900;
+}
+
+.skills ul {
+	font-family: 'Play', Futura, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.main-text h3 {
+	text-align: center;
+	font-weight: 900;
+}
+
+.main-text {
+	padding-top: 10px;
+	font-family: 'Play', Futura, Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+}
+
+.header h1 {
+	text-align: center;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#contact .header h1 {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+.row .video {
+	margin-bottom: 50px
+}
+
+footer {
+	height: 50px;
+	border-top: 1px solid #c0c0c0;
+	padding-top: 10px;
+	padding-bottom: auto;
+}
+
+/*.form-group {
+	border: 1px solid blue;
+}*/
+
+.form-contact {
+	width: 80%;
+	margin-top: 0px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.submit-btn {
+	margin-top: 15px;
+}
+
+label {
+	color: white;
+	margin-left: 10px;
+}
+
+.form-contact p {
+	color: black;
+	font-family: 'Play', Futura, Helvetica, Arial, sans-serif;
+	font-size: 1.4em;
+}
